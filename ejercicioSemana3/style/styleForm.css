@@ -1,0 +1,108 @@
+*{
+    font-family: "Arial", sans-serif;}
+
+.form{
+    margin:auto;
+    padding: 50px;
+    width: 40%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.687);
+    backdrop-filter: blur(5px); 
+}
+
+.form h1{
+    margin: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.form label, input, button,textarea{
+    margin: 10px;
+}
+
+.form select{
+    margin: 30px 0px;
+}
+
+.btnSend{
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: rgb(225, 184, 50);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 50px;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+input,select{
+    cursor: pointer;
+}
+.btnSend:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+.form input,textarea,select{
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 20px;
+}
+
+.form input,textarea{
+   /*  width: 100%; */
+    padding: 5px 10px;
+}
+
+.form div{
+    display: grid;
+    grid-template-columns: .8fr 2fr;
+    align-items: center;
+}
+
+.form textarea{
+    height: 60px;
+    width: 91%; 
+}
+
+form .divColor input{
+    width: 50px;
+    height: 40px;
+}
+
+.divCheckBox{
+    padding: 0px 8px;
+}
+
+.divSelect{
+    padding: 0px 10px;
+    
+}
+
+/* Fondo con overlay oscuro */
+body {
+    background-image: url("../assets/4-4124_avengers_movie_poster_web.png"); /* Ajusta la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: white;
+}
+
+/* Capa oscura sobre el fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura (ajusta la opacidad) */
+    z-index: -1; /* Mantiene la capa detrás del contenido */
+}

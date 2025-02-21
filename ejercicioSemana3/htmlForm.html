@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/styleForm.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Form</h1>
+        <form action="htmlGrid.html" method="POST">
+            <div class="divname">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  placeholder="Add Name" required><br>
+            </div>
+            <div class="divlastName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Add Last name"  required><br>
+            </div>
+            <div class="divage">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" placeholder="Add Age" required><br>
+            </div>
+            
+            <div class="divPhone">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Add Phone number" pattern="[0-9]{10}" required><br>    
+            </div>
+
+            <div class="divDate">
+                <label>Date:</label> 
+                <input type="date"><br><br>
+            </div>
+           
+         
+            <label for="observations">Observations:</label><br>
+            <textarea id="observations" name="observations" placeholder="Add message"></textarea><br>    
+        
+           <div class="divColor">
+                <label for="color">
+                    Choose a color:
+                </label>
+                <input type="color" id="color"><br>
+           </div>
+            
+           <div class="divSelect">
+                <select name="language">
+                    <option selected disabled>Choose language</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="visual_basic">Visual Basic</option>
+                </select><br>
+           </div>
+           <div class="divCheckBox">
+                <label for="sport"><b>Sport:</b></label>
+                <div class="divSoccer">
+                    <label for="optSoccer">Soccer</label>
+                    <input type="checkbox" name="ciclo" value="soccer">
+                </div><br>
+                <div class="divVolleyball">
+                    <label for="optVolley">Volleyball</label>
+                    <input type="checkbox" name="ciclo" value="volleyball">
+                </div><br>
+                <div class="divSwimming">
+                    <label for="optSwimming">Swimming</label>
+                    <input type="checkbox" name="ciclo" value="swimming">
+                </div><br>
+                <div class="divOther">
+                    <label for="optOther">Other</label>
+                    <input type="checkbox" name="ciclo" value="other">
+                </div><br>
+           </div>
+            
+            <button class="btnSend" type="submit">Send🤔</button><br>
+        </form>
+    </div>
+</body>
+</html>

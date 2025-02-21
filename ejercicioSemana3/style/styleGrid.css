@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    padding: 20px;
+}
+.containerGrid{
+    /*  border: 2px solid black;
+     background-color: bisque; */
+     place-content: center;
+     margin-top: 20px;
+     margin: auto;
+     width: 35%;
+     justify-content: center;
+ }
+ 
+ .containerGrid .row1, .row2, .row3{
+     display: grid;
+     justify-content: center;
+ }
+ 
+ .containerGrid .row1{
+     grid-template-columns: 1fr 2fr;
+     grid-template-rows: repeat(1,1fr);
+ }
+ 
+ .containerGrid .row2{
+     grid-template-columns: 2fr 1fr;
+     grid-template-rows: repeat(1,1fr);
+ }
+ 
+ .containerGrid .row3{
+     display: grid;
+     justify-content: center;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(1,1fr);
+ }
+ img{
+     width: 100%;
+     height: 100%;
+ }
+ /* .item{
+     border: 2px solid red;
+ }
+  */
